@@ -1,0 +1,46 @@
+import { StyledNote } from '@/shared/components/Mdx/StyledNote';
+
+# StudyNextjs アプリ全体の解説
+
+このページは **MDX** で作成されています。  
+今回は「Markdownだけで構成する」形にしているため、本文とUI表現はすべてMarkdown記法で書かれています。
+
+---
+
+## このアプリでできること
+
+- Todo 一覧表示（未完了 / 完了状態の確認）
+- Todo の新規作成
+- Todo 詳細表示
+- Todo の更新・削除
+
+[Todo画面を開く](/todos)  
+[新規作成へ](/todos/create)
+
+---
+
+## 構成のポイント
+
+| ディレクトリ | 役割 |
+| --- | --- |
+| `app/` | ルーティングとページ定義（App Router） |
+| `features/` | Todo の機能別実装（create / update / delete / list / detail） |
+| `shared/` | 共通UI・型・ユーティリティ |
+
+---
+
+## MDX をどう使っているか
+
+このページでは次のように Markdown だけで表現しています。
+
+1. 見出しやリスト、表などの本文は Markdown 記法
+2. 強調・区切り・リンクなども Markdown 記法で統一
+3. コンポーネントを使わず、文書中心のページとして構成
+
+> 文章中心のページを素早く作りたい場合、MDXをMarkdown主体で使う構成は扱いやすく実践的です。
+
+## styled-components サンプル
+
+下のボックスは `styled-components` で作成したコンポーネントです。
+
+<StyledNote />

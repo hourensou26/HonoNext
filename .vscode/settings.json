@@ -1,0 +1,47 @@
+{
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 11,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "editor.tabSize": 2,
+
+  "vscode_custom_css.imports": [
+    // MacのホームディレクトリにCSSファイルを保存した場合※
+    "file:///C:/Users/adgjm/Desktop/.vscode/synthwave84.css"
+  ],
+  "vscode_custom_css.policy": true,
+
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.background1": "#b22222",
+    "editorIndentGuide.background2": "#ff4500",
+    "editorIndentGuide.background3": "#ffd700",
+    "editorIndentGuide.background4": "#228b22",
+    "editorIndentGuide.background5": "#000080",
+    "editorIndentGuide.background6": "#8b008b",
+    "editorIndentGuide.activeBackground1": "#fff",
+    "editorIndentGuide.activeBackground2": "#fff",
+    "editorIndentGuide.activeBackground3": "#fff",
+    "editorIndentGuide.activeBackground4": "#fff",
+    "editorIndentGuide.activeBackground5": "#fff",
+    "editorIndentGuide.activeBackground6": "#fff"
+  }
+}
