@@ -1,4 +1,4 @@
-import { TodoResponse } from '../types';
+import { CreateTodoResponse } from '../types';
 import { CreateTodoParams } from '../types';
 
 export const fetchCreate = async ({ title, description }: CreateTodoParams) => {
@@ -18,6 +18,6 @@ export const fetchCreate = async ({ title, description }: CreateTodoParams) => {
     throw new Error(`Failed to create todo: ${response.status}`);
   }
 
-  const data: { data: TodoResponse } = await response.json();
+  const data: { data: CreateTodoResponse } = await response.json();
   return data.data;
 };

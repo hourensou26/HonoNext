@@ -1,40 +1,15 @@
-export type TodoId = string;
+import type { paths } from '@/openapi/schema';
 
-export type Todo = {
-  id: number;
-  title: string;
-  description: string;
-  completed: boolean;
-  createdAt: string;
-};
+export type TodosResponse =
+  paths['/api/v1/todos']['get']['responses'][200]['content']['application/json']['data'];
 
-export type Todos = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
+export type Todo =
+  paths['/api/v1/todos/{id}']['get']['responses'][200]['content']['application/json']['data'];
+
+export type TodoId = paths['/api/v1/todos/{id}']['delete']['parameters']['path']['id'];
+
+export type Todos = Pick<Todo, 'id' | 'title' | 'completed'>;
 
 export type ActionState = {
   error?: string;
 };
-
-export type CreateTodoParams = {
-  title: string;
-  description: string;
-};
-
-export type UpdateTodoParams = {
-  id: number;
-  title: string;
-  description: string;
-  completed: boolean;
-};
-
-export interface TodoResponse {
-  id: number;
-  title: string;
-  description: string;
-  completed: boolean;
-  createdAt: string;
-  updatedAt: string;
-}
